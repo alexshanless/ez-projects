@@ -2,22 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.11/tailwind.min.css"
+      integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
-      integrity="sha512-BAK6UB671tmfzrkeH1CacTvgHQ3aLAFnT2KsigdATsc5X7+3u42tb5vjmAoDiqtxphP5dNZ3cDygivTsGEJhGw=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-    <title>Password Strength</title>
+    <title>Password Strength Backround</title>
   </head>
   <body>
     <div class="background" id="background"></div>
@@ -25,7 +18,7 @@
       <h1 class="text-3xl">Image Password Strength</h1>
       <p class="text-sm text-gray-700">Change the password to see the effect</p>
       <div class="my-4 text-left">
-        <label for="email" class="tex-gray-900">Email:</label>
+        <label for="email" class="text-gray-900">Email:</label>
         <input
           type="text"
           class="border block w-full p-2 mt-2 rounded"
@@ -33,8 +26,9 @@
           placeholder="Enter Email"
         />
       </div>
+
       <div class="my-4 text-left">
-        <label for="email" class="tex-gray-900">Password:</label>
+        <label for="email" class="text-gray-900">Password:</label>
         <input
           type="password"
           class="border block w-full p-2 mt-2 rounded"
