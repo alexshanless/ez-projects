@@ -1,10 +1,22 @@
 const button = document.getElementById("btn");
-const boxes = document.getElementById("boxes");
+const boxesContainer = document.getElementById("boxes");
 
 button.addEventListener("click", () => {
-  if (boxes.classList.contains("big")) {
+  if (boxesContainer.classList.contains("big")) {
     boxes.classList.remove("big");
   } else {
-    boxes.classList.add("big");
+    boxesContainer.classList.add("big");
   }
 });
+
+function createBoxes() {
+  for (let i = 0; i < 4; i++) {
+    for (let j = 0; j < 4; j++) {
+      const box = document.createElement("div");
+      box.classList.add("box");
+      box.style.backgroundPosition = `${-j * 125}px ${-i * 125}px`;
+      boxesContainer.appendChild(box);
+    }
+  }
+}
+createBoxes();
