@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-family: "Merriweather";
+}
+
+.container {
+  flex-direction: column;
+  width: 900px;
+  margin: 120px auto;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
+
+.blog-title {
+  width: 100%;
+  height: 20%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.blog-title h1 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-title p {
+  font-size: 20px;
+}
+
+.top-post {
+  height: 35%;
+  display: flex;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.top-post > img {
+  width: 585px;
+  height: 307px;
+}
+
+.top-post-details {
+  width: 35%;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+.top-post-details > h3 {
+  font-size: 1.6rem;
+}
+
+.post-details {
+  width: 100%;
+}
+
+.post-details > h3 {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.post-details > h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.bio {
+  margin-top: 20px;
+  display: flex;
+}
+
+.bio > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.other-posts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.other-post {
+  width: 30%;
+  height: 100%;
+}
+
+.other-post > img {
+  width: 100%;
+}
