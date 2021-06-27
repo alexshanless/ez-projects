@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  margin-top: 10vh;
+  width: 350px;
+  height: 681px;
+  background-color: white;
+}
+
+.logo {
+  width: 100%;
+}
+
+.content-container {
+  padding: 0 20px;
+}
