@@ -4,18 +4,24 @@
 
 body {
   background-color: rgba(255, 255, 249, 0.938);
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  flex-direction: column;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .container {
   width: 350px;
-  height: 681px;
+  height: 100%;
   background-color: white;
+  margin-top: 2rem;
+}
+
+.responsive-pic {
+  display: none;
 }
 
 .logo {
@@ -24,7 +30,6 @@ body {
 }
 
 .top-container {
-  border: 1px solid #d6d0d0;
   margin: 0;
   padding: 0 32px;
 }
@@ -63,6 +68,9 @@ input[type="submit"] {
 .separator {
   display: flex;
   justify-content: center;
+  color: rgb(148, 139, 139);
+  font-size: 0.8rem;
+  font-weight: 800;
 }
 
 .forgot-container {
@@ -74,7 +82,7 @@ input[type="submit"] {
 .forgot-container a {
   margin-top: 10px;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #00376b;
 }
 
@@ -85,8 +93,8 @@ input[type="submit"] {
 }
 
 .signup {
-  border: 1px solid #d6d0d0;
-  margin-top: 10px;
+  font-size: 0.9rem;
+  margin: 4.5rem 0;
   padding: 20px;
   text-align: center;
 }
@@ -115,4 +123,86 @@ input[type="submit"] {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .links {
+  padding: 50px 5px 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .links a {
+  margin: 2px 5px;
+  text-decoration: none;
+  font-family: Segoe UI, Verdana, Helvetica, Roboto, sans serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(142, 142, 142);
+}
+
+.copyright {
+  margin: 0px 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  padding: 0px 0px 0px 10px;
+  font-family: Segoe UI, Verdana, Helvetica, Roboto, sans serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(142, 142, 142);
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  font-family: Segoe UI, Verdana, Helvetica, Roboto, sans serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(142, 142, 142);
+}
+
+@media screen and (min-width: 475px) {
+  .container {
+    height: 650px;
+    margin-top: 100px;
+  }
+
+  .top-container {
+    border: 1px solid #d6d0d0;
+  }
+
+  .signup {
+    border: 1px solid #d6d0d0;
+    margin: 10px 0;
+  }
+
+  .app-icons {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .container {
+    width: 700px;
+    display: flex;
+  }
+
+  .content-container {
+    width: 50%;
+    height: 100%;
+  }
+  .image-container {
+    margin-right: 25px;
+    width: 50%;
+    height: 100%;
+    background: bottom / 100%
+      url("https://assets.codepen.io/6060109/IG-phone.jpeg");
+  }
 }
